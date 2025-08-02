@@ -9,15 +9,33 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+
+  ],
   "main": "./dist/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "mindexdb.helloWorld",
-        "title": "Hello World"
-      }
-    ]
+   "commands": [
+            {
+                "command": "my-extension.hello",
+                "title": "Say Hello",
+                "category": "My Extension"
+            },
+            {
+                "command": "my-extension.statusClick",
+                "title": "Status Bar Click",
+                "category": "My Extension"
+            },
+            {
+                "command": "my-extension.uppercase",
+                "title": "Convert to Uppercase",
+                "category": "My Extension"
+            },
+            {
+                "command": "my-extension.showSelection",
+                "title": "Show Selected Text",
+                "category": "My Extension"
+            }
+        ]
   },
   "scripts": {
     "vscode:prepublish": "yarn run package",
